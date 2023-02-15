@@ -17,8 +17,8 @@ public class ExceptionDemo4 {
 		System.out.println("Enter your password: ");
 		password = sc.nextLine();
 		try {
-			if(name!="Bickey" && password != "abcd@12345") {
-				Exception ex = new Exception("500pks name is not permitted! ");
+			if(!name.equals("Bickey") && !password.equals("abcd@12345")) {
+				Exception ex = new Exception("You are not our active user. Please sign in.");
 				throw ex;
 			}
 		}catch(Exception e){
