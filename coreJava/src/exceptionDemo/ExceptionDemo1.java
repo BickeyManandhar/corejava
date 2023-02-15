@@ -8,6 +8,11 @@ public class ExceptionDemo1 {
 		//if we want to avoid abnormal termination of a program then we have to do exception handling
 		//five keywords -try, catch, finally, throw and throws
 		//catch block will be executed only when there is some exception in try block
+		//unchecked exception : the exceptions whose immediate parent is Runtime exception i.e.
+		//ArithmeticException, NullPointerException, NumberFormatException are unchecked exception
+		// other than that others are checked exception
+		//for unchecked exception, we do not need to write try catch block
+		// for checked exception, we must write try catch block
 		
 		int a = 10, b = 20, c=0;
 		
